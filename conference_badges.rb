@@ -11,7 +11,7 @@ end
 def assign_rooms(array)
   new_array = []
   room_numbers = [1,2,3,4,5,6,7]
-  array.each_with_index { |name,number| new_array << "Hello, " + name + "! You'll be assigned to room " + (number.to_i + 1) + "!" }
+  array.each_with_index { |name,number| new_array << "Hello, " + name + "! You'll be assigned to room " + room_numbers[number.to_i] + "!" }
   new_array
 end
 
